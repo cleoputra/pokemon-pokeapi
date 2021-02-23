@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,900");
+
+/* RESETS
+=========================================== */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 20px 0;
+  padding: 0 20px;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  color: #202020;
+  background-color: #fbfbfb;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.name-pokemon{
+    background-color: #ecd018;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+
+.txt_desc-2{
+padding: 10px;
+font-weight: bold;
+text-transform: uppercase;
+color: white;
+letter-spacing: 4px;
+text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+}
+
+.image_poke{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_poke_2{
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.center{
+    text-align: center;
+    align-content: center !important;
+    align-items: center !important;
+}
+
+.text_desc{
+    text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  letter-spacing: 4px;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+  
+}
+
+.mg-left{
+  margin-left: 20px;
+}
+
+.tab-icon img{
+  width: 100% !important; 
+  transition: 0.5s all ease-in-out !important; 
+}
+.tab-icon img:hover{
+    transform: scale(1.5)!important;
+}
+
+.space-top{
+  margin-top:80px;
+}
+
+
+/* .appBar {
+  top: auto;
+  bottom: 0;
+}
+.grow{
+  flex-grow: 1;
+}
+.fabButton {
+  position: 'absolute';
+  z-index: 1;
+  top: -30;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+} */
+@media (max-width: 800px) {
+    .name-pokemon {
+      width: 100%;
+    }
+  }
+
+  
+@media (max-width: 400px) {
+    .name-pokemon {
+      flex-wrap: wrap;
+    }
+}
+  
