@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pokemon-pokeapi/static/css/main.77f876d5.chunk.css",
-    "main.js": "/pokemon-pokeapi/static/js/main.3842f6e9.chunk.js",
-    "main.js.map": "/pokemon-pokeapi/static/js/main.3842f6e9.chunk.js.map",
+    "main.js": "/pokemon-pokeapi/static/js/main.b376ee17.chunk.js",
+    "main.js.map": "/pokemon-pokeapi/static/js/main.b376ee17.chunk.js.map",
     "runtime-main.js": "/pokemon-pokeapi/static/js/runtime-main.9af6ddde.js",
     "runtime-main.js.map": "/pokemon-pokeapi/static/js/runtime-main.9af6ddde.js.map",
     "static/js/2.7645683d.chunk.js": "/pokemon-pokeapi/static/js/2.7645683d.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.9af6ddde.js",
     "static/js/2.7645683d.chunk.js",
     "static/css/main.77f876d5.chunk.css",
-    "static/js/main.3842f6e9.chunk.js"
+    "static/js/main.b376ee17.chunk.js"
   ]
 }
