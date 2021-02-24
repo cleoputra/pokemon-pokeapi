@@ -10,7 +10,7 @@ import "./style.css";
 function App() {
   return (
     <Switch>
-      <Route exact path="/" render={(props) => <Pokedex {...props} />} />
+      <Route exact path="/pokemon-pokeapi" render={(props) => <Pokedex {...props} />} />
       <Route exact path="/myPokemon" render={(localStorage) => <MyPokemon {...localStorage} />} />
       <Route exact path="/:pokemonId" render={(props) => <Pokemon {...props} />} />
     </Switch>

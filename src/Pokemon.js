@@ -4,6 +4,7 @@ import axios from 'axios';
 import MyPokemon from "./myPokemon";
 import pokeball from "./pokeball.png";
 import mypoke from "./fight.png";
+import Swal from 'sweetalert2'
 
 const catchPokemon = (payload) => {
     const prevPokemon = JSON.parse(localStorage.getItem('myData')) || [];
@@ -11,6 +12,11 @@ const catchPokemon = (payload) => {
     localStorage.setItem('myData', JSON.stringify(newPokemon));
     console.log(newPokemon);
     <MyPokemon key={localStorage} />
+    Swal.fire(
+        'Good job!',
+        'You catched the Pokemon!',
+        'success'
+    )
 
 }
 const Pokemon = (props) => {
@@ -25,6 +31,7 @@ const Pokemon = (props) => {
             .then(function (response) {
                 const { data } = response;
                 setPokemon(data);
+
             })
             .catch(function (error) {
                 setPokemon(false);
@@ -41,7 +48,7 @@ const Pokemon = (props) => {
 
                     <AppBar position="fixed" color="primary" className="appBar">
                         <Toolbar>
-                            <a href="/"><img src={pokeball} alt="hompage" /></a>
+                            <a href="/pokemon-pokeapi"><img src={pokeball} alt="hompage" /></a>
                             <a href="/myPokemon"><img className="tab-icon mg-left" alt="mypokemon" src={mypoke} /></a>
                             <Typography className="txt_desc-2">{name}</Typography>
 
@@ -90,7 +97,7 @@ const Pokemon = (props) => {
                 <Grid container spacing={3} className="center">
                     <Grid item xs={12}>
 
-                        <Button color="secondary" className="center" variant="contained" onClick={() => history.push("/")}>
+                        <Button color="secondary" className="center" variant="contained" onClick={() => history.push("/pokemon-pokeapi")}>
                             Back to pokedex
                 </Button>
                     </Grid>

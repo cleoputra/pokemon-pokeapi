@@ -7,13 +7,26 @@ import {
 import pokeball from "./pokeball.png";
 import mypoke from "./fight.png";
 
+import Swal from 'sweetalert2'
+
 const catchList = JSON.parse(localStorage.getItem('myData')) || [];
 const MyPokemon = () => {
 
     console.log(catchList);
     const remove = () => {
-        localStorage.removeItem('myData');
-        window.location.reload();
+
+        const done = localStorage.removeItem('myData');
+
+        Swal.fire({
+            // Swal Setting's
+            title: 'Namaste!',
+            text: 'You released all your Pokemons!',
+            icon: 'success'
+        }).then((done) => {
+            // Reload the Page
+            window.location.reload();
+        });
+
     }
 
     return (
@@ -21,7 +34,7 @@ const MyPokemon = () => {
 
             <AppBar position="fixed" color="primary" className="appBar ">
                 <Toolbar>
-                    <a href="/"><img src={pokeball} alt="hompage" /></a>
+                    <a href="/pokemon-pokeapi"><img src={pokeball} alt="hompage" /></a>
                     <a href="/myPokemon"><img className="tab-icon mg-left" alt="my-pokemon" src={mypoke} /></a>
                     <Typography className="txt_desc-2">My Pokemon</Typography>
 

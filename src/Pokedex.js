@@ -45,7 +45,7 @@ const Pokedex = props => {
 
                 <AppBar position="fixed" color="primary" className="appBar ">
                     <Toolbar>
-                        <a href="/"><img src={pokeball} alt="hompage" /></a>
+                        <a href="/pokemon-pokeapi"><img src={pokeball} alt="hompage" /></a>
                         <a href="/myPokemon"><img className="tab-icon mg-left" alt="mypokemon" src={mypoke} /></a>
                         <Typography className="txt_desc-2">POKEDEX</Typography>
 
